@@ -1,0 +1,86 @@
+🔹 Stack (LIFO – Last In First Out)
+
+A Stack is a linear data structure that follows the Last In First Out (LIFO) principle.
+In this implementation, the stack is created using a singly linked list, where insertion and deletion happen at the head node.
+
+Key Operations:
+
+push() – Inserts an element at the top of the stack
+
+pop() – Removes and returns the top element
+
+peek() – Returns the top element without removing it
+
+isEmpty() – Checks whether the stack is empty
+
+stackSize() – Returns the number of elements in the stack
+
+Advantages:
+
+Dynamic size (no fixed limit like arrays)
+
+Efficient push and pop operations → O(1) time complexity
+
+Use Cases:
+
+Function calls (call stack)
+
+Undo/Redo operations
+
+Expression evaluation
+
+Backtracking algorithms
+
+🔹 Queue (FIFO – First In First Out)
+
+A Queue is a linear data structure that follows the First In First Out (FIFO) principle.
+This queue is implemented using a linked list with two pointers: front and rear.
+
+Key Operations:
+
+enqueue() – Inserts an element at the rear of the queue
+
+dequeue() – Removes and returns the front element
+
+peek() – Returns the front element without removing it
+
+isEmpty() – Checks whether the queue is empty
+
+size() – Returns the total number of elements
+
+Advantages:
+
+No overflow issues due to dynamic memory allocation
+
+Constant time insertion and deletion → O(1)
+
+Use Cases:
+
+CPU scheduling
+
+Task/Job scheduling
+
+Printer queues
+
+Data buffering
+
+🔹 Why Linked List Implementation?
+
+No need for contiguous memory
+
+Efficient insertion and deletion
+
+Better memory utilization for dynamic data
+
+🔹 Time Complexity
+Operation	Stack	Queue
+Insert	O(1)	O(1)
+Delete	O(1)	O(1)
+Peek	O(1)	O(1)
+🔹 Technologies Used
+
+Python
+
+Object-Oriented Programming (OOP)
+
+Linked List Data Structure
