@@ -84,3 +84,67 @@ Python
 Object-Oriented Programming (OOP)
 
 Linked List Data Structure
+
+What is a Linked List?
+
+A Linked List is a linear data structure where elements (called nodes) are stored in non-contiguous memory locations.
+Each node contains:
+
+Data
+
+Reference (pointer) to the next node
+
+Structure of a Node
+
+data → stores the value
+
+next → points to the next node in the list
+
+The last node points to NULL
+
+Types of Linked Lists
+
+Singly Linked List – each node points to the next node
+
+Doubly Linked List – nodes have previous and next pointers
+
+Circular Linked List – last node points back to the first node
+
+Basic Operations
+
+Insertion (at beginning, end, or specific position)
+
+Deletion (from beginning, end, or specific node)
+
+Traversal (displaying elements)
+
+Searching an element
+
+Finding minimum / maximum value
+
+Reversing the list
+
+Advantages
+
+Dynamic size (no fixed memory)
+
+Efficient insertions and deletions
+
+No memory wastage like arrays
+
+Disadvantages
+
+No direct access to elements (no indexing)
+
+Extra memory required for pointers
+
+Slower access compared to arrays
+
+Time Complexity
+Operation	Time Complexity
+Access	O(n)
+Search	O(n)
+Insertion	O(1)*
+Deletion	O(1)*
+
+* When position/node is already known
