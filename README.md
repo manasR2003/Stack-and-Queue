@@ -148,3 +148,108 @@ Insertion	O(1)*
 Deletion	O(1)*
 
 * When position/node is already known
+📌 Graph – Data Structure
+
+A Graph is a non-linear data structure used to represent connections between elements.
+
+Vertex (Node): Individual element
+
+Edge: Connection between two vertices
+
+Graphs are widely used in:
+
+Social networks
+
+Road maps & navigation systems
+
+Computer networks
+
+Recommendation systems
+
+📌 Types of Graphs
+
+Undirected Graph:
+Connection works both ways (A ↔ B)
+
+Directed Graph:
+Connection works one way (A → B)
+
+Weighted Graph:
+Edges have cost or weight
+
+Unweighted Graph:
+No weight on edges
+
+📌 Graph Representation
+Adjacency List (Used in this project)
+
+Graphs are represented using a dictionary where:
+
+Key → Vertex
+
+Value → List of connected vertices
+
+Example:
+
+{
+  0: [1, 2],
+  1: [0],
+  2: [0]
+}
+
+
+✔ Memory efficient
+✔ Easy traversal
+
+📌 Breadth First Search (BFS)
+
+BFS is a graph traversal algorithm that visits nodes level by level.
+
+Key Points:
+
+Uses Queue (FIFO)
+
+Visits nearest nodes first
+
+Prevents infinite loops using a visited list/set
+
+Useful for finding shortest path in unweighted graphs
+
+Time Complexity:
+
+O(V + E)
+(V = vertices, E = edges)
+
+📌 Depth First Search (DFS)
+
+DFS is a graph traversal algorithm that goes deep first before backtracking.
+
+Key Points:
+
+Uses Recursion or Stack
+
+Explores one path completely before moving to another
+
+Uses visited to avoid revisiting nodes
+
+Useful for cycle detection and path exploration
+
+Time Complexity:
+
+O(V + E)
+
+📌 BFS vs DFS
+BFS	                    DFS
+Uses Queue	            Uses Recursion / Stack
+Level-wise traversal	  Deep traversal
+Best for shortest path	Best for full exploration
+
+📌 Why visited is Important
+
+Without tracking visited nodes:
+
+Graph traversal may enter infinite loops
+
+Same node may be visited multiple times
+
+The visited structure ensures each node is processed only once.
