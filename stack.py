@@ -74,8 +74,7 @@ class Stack:
     
     def push(self,value):
         new_node=Node(value)
-        if self.isempty():
-            new_node.next=self.head
+        new_node.next=self.head
         self.head=new_node
         self.size+=1
 
